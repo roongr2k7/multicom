@@ -1,7 +1,9 @@
 package law
 
-class SuitFolder {
+import grails.plugin.multitenant.core.groovy.compiler.MultiTenant
 
-    static constraints = {
-    }
+class SuitFolder {
+  String suitNo
+  static constraints = {
+  }
 }

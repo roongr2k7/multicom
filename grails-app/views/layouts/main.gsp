@@ -12,6 +12,13 @@
             <img src="${resource(dir:'images',file:'spinner.gif')}" alt="${message(code:'spinner.alt',default:'Loading...')}" />
         </div>
         <div id="grailsLogo"><a href="http://grails.org"><img src="${resource(dir:'images',file:'grails_logo.png')}" alt="Grails" border="0" /></a></div>
+        <g:if test="${session.ten == '1'}">
+        <div style="width: 200px;"><span style="display:inline-block;width:80px;background-color:#afc;"><g:link action="changeTenant" id="1">KTB Bank</g:link></span><span style="display:inline-block;width:80px;"><g:link action="changeTenant" id="2">SAM</g:link></span></div>
+        </g:if>
+        <g:else>
+        <div style="width: 200px;"><span style="display:inline-block;width:80px;"><g:link action="changeTenant" id="1">KTB Bank</g:link></span><span style="display:inline-block;width:80px;background-color:#afc;"><g:link action="changeTenant" id="2">SAM</g:link></span></div>
+        </g:else>
+        
         <g:layoutBody />
     </body>
 </html>

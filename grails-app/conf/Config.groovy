@@ -88,3 +88,13 @@ log4j = {
 
     warn   'org.mortbay.log'
 }
+tenant {
+    mode = "singleTenant"
+    datasourceResolver.type = "config" //This is the default and can be omitted
+    dataSourceTenantMap {
+        //The "t" before the tenantId is required because you can't have a 
+        //variable that's a number 
+        t1 = "jdbc:hsqldb:file:legal"
+        t2 = "jdbc:hsqldb:file:sam"
+    }
+}
