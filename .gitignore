@@ -1,0 +1,16 @@
+*~
+*.orig
+.settings/
+classes
+*class
+target/
+lib/
+.link_to_grails_plugins
+.classpath
+.project
+/.link_to_grails_plugins
+/spring-security-core-1.1.3-src-groovy
+/spring-security-core-1.1.3-src-java
+/console-1.0.1-grails-app-views
+/tomcat-1.3.7-src-groovy
+src/java/micross.ttf
